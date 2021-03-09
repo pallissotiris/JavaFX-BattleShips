@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="layout" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1000.0" styleClass="mypane" stylesheets="@MainGUIStyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <left>
+      <VBox alignment="CENTER" maxWidth="400.0" prefWidth="400.0" spacing="25.0" BorderPane.alignment="BOTTOM_CENTER">
+         <children>
+            <Label alignment="CENTER" prefWidth="114.0" text="PLAYER">
+               <font>
+                  <Font name="Stencil" size="31.0" />
+               </font>
+               <padding>
+                  <Insets top="-20.0" />
+               </padding>
+            </Label>
+            <HBox alignment="CENTER" prefWidth="200.0" spacing="20.0">
+               <children>
+                        <Label fx:id="playerActiveShipLabel" text="Active Ships:">
+                     <font>
+                        <Font name="Stencil" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin></Label>
+                        <Label fx:id="playerPointsLabel" text="Points:">
+                     <font>
+                        <Font name="Stencil" size="16.0" />
+                     </font></Label>
+                        <Label fx:id="playerHitRateLabel" text="Hit Rate:">
+                     <font>
+                        <Font name="Stencil" size="16.0" />
+                     </font></Label>
+               </children>
+            </HBox>
+            <GridPane alignment="CENTER" maxHeight="330.0" maxWidth="330.0" minHeight="330.0" minWidth="330.0" prefHeight="330.0" prefWidth="330.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" percentWidth="0.0" prefWidth="30.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="350.0" minWidth="350.0" prefWidth="350.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="350.0" minHeight="350.0" prefHeight="350.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <GridPane alignment="CENTER" GridPane.columnIndex="1">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" valignment="CENTER" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" text="A" textAlignment="CENTER">
+                           <font>
+                              <Font name="Stencil" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" text="B" textAlignment="CENTER" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Stencil" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" text="C" textAlignment="CENTER" GridPane.columnIndex="2">
+                           <font>
+                              <Font name="Stencil" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" text="D" textAlignment="CENTER" GridPane.columnIndex="3">
+                           <font>
+                              <Font name="Stencil" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" text="E" textAlignment="CENTER" GridPane.columnIndex="4">
+                           <font>
+                              <Font name="Stencil" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" text="F" textAlignment="CENTER" GridPane.columnIndex="5">
+                           <font>
+                              <Font name="Stencil" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" text="G" textAlignment="CENTER" GridPane.columnIndex="6">
+                           <font>
+                              <Font name="Stencil" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" text="H" textAlignment="CENTER" GridPane.columnIndex="7">
+                           <font>
+                              <Font name="Stencil" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" text="I" textAlignment="CENTER" GridPane.columnIndex="8">
+                           <font>
+                              <Font name="Stencil" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" text="J" textAlignment="CENTER" GridPane.columnIndex="9">
+                           <font>
+                              <Font name="Stencil" size="21.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+                  <GridPane alignment="CENTER" GridPane.rowIndex="1">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                        <RowConstraints fillHeight="false" maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" text="1" GridPane.halignment="CENTER">
+                           <font>
+                              <Font name="Stencil" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" text="2" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Stencil" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" text="3" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Stencil" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" text="4" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Stencil" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" text="5" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="Stencil" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" text="6" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="Stencil" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" text="7" GridPane.rowIndex="6">
+                           <font>
+                              <Font name="Stencil" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" text="8" GridPane.rowIndex="7">
+                           <font>
+                              <Font name="Stencil" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" text="9" GridPane.rowIndex="8">
+                           <font>
+                              <Font name="Stencil" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" text="10" GridPane.rowIndex="9">
+                           <font>
+                              <Font name="Stencil" size="21.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+                  <GridPane fx:id="playerGrid" alignment="CENTER" gridLinesVisible="true" styleClass="mygrid" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                        <RowConstraints fillHeight="false" maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+               </children>
+            </GridPane>
+         </children>
+         <BorderPane.margin>
+            <Insets left="50.0" />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+   <right>
+      <VBox alignment="CENTER" maxWidth="400.0" prefWidth="400.0" spacing="25.0" BorderPane.alignment="BOTTOM_CENTER">
+         <children>
+            <Label text="COMPUTER">
+               <font>
+                  <Font name="Stencil" size="31.0" />
+               </font>
+               <padding>
+                  <Insets top="-20.0" />
+               </padding>
+            </Label>
+            <HBox alignment="CENTER" prefWidth="200.0" spacing="20.0">
+               <children>
+                        <Label fx:id="enemyActiveShipLabel" text="Active Ships:">
+                     <font>
+                        <Font name="Stencil" size="16.0" />
+                     </font></Label>
+                        <Label fx:id="enemyPointsLabel" text="Points:">
+                     <font>
+                        <Font name="Stencil" size="16.0" />
+                     </font></Label>
+                        <Label fx:id="enemyHitRateLabel" text="Hit Rate:">
+                     <font>
+                        <Font name="Stencil" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin></Label>
+               </children>
+            </HBox>
+            <GridPane alignment="CENTER" maxHeight="330.0" maxWidth="330.0" minHeight="330.0" minWidth="330.0" prefHeight="330.0" prefWidth="330.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" percentWidth="0.0" prefWidth="30.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="350.0" minWidth="350.0" prefWidth="350.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="350.0" minHeight="350.0" prefHeight="350.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <GridPane alignment="CENTER" GridPane.columnIndex="1">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" valignment="CENTER" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" text="A" textAlignment="CENTER">
+                           <font>
+                              <Font name="Stencil" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" text="B" textAlignment="CENTER" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Stencil" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" text="C" textAlignment="CENTER" GridPane.columnIndex="2">
+                           <font>
+                              <Font name="Stencil" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" text="D" textAlignment="CENTER" GridPane.columnIndex="3">
+                           <font>
+                              <Font name="Stencil" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" text="E" textAlignment="CENTER" GridPane.columnIndex="4">
+                           <font>
+                              <Font name="Stencil" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" text="F" textAlignment="CENTER" GridPane.columnIndex="5">
+                           <font>
+                              <Font name="Stencil" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" text="G" textAlignment="CENTER" GridPane.columnIndex="6">
+                           <font>
+                              <Font name="Stencil" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" text="H" textAlignment="CENTER" GridPane.columnIndex="7">
+                           <font>
+                              <Font name="Stencil" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" text="I" textAlignment="CENTER" GridPane.columnIndex="8">
+                           <font>
+                              <Font name="Stencil" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" text="J" textAlignment="CENTER" GridPane.columnIndex="9">
+                           <font>
+                              <Font name="Stencil" size="21.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+                  <GridPane alignment="CENTER" GridPane.rowIndex="1">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                        <RowConstraints fillHeight="false" maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" text="1" GridPane.halignment="CENTER">
+                           <font>
+                              <Font name="Stencil" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" text="2" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Stencil" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" text="3" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Stencil" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" text="4" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Stencil" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" text="5" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="Stencil" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" text="6" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="Stencil" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" text="7" GridPane.rowIndex="6">
+                           <font>
+                              <Font name="Stencil" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" text="8" GridPane.rowIndex="7">
+                           <font>
+                              <Font name="Stencil" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" text="9" GridPane.rowIndex="8">
+                           <font>
+                              <Font name="Stencil" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" text="10" GridPane.rowIndex="9">
+                           <font>
+                              <Font name="Stencil" size="21.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+                  <GridPane fx:id="enemyGrid" alignment="CENTER" gridLinesVisible="true" styleClass="mygrid" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                        <RowConstraints fillHeight="false" maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+               </children>
+            </GridPane>
+         </children>
+         <BorderPane.margin>
+            <Insets right="50.0" />
+         </BorderPane.margin>
+      </VBox>
+   </right>
+   <top>
+      <VBox alignment="CENTER" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+                <MenuBar fx:id="menuBar">
+                    <menus>
+                        <Menu fx:id="appMenu" mnemonicParsing="false" styleClass="custom-label" text="Application">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#startMenuAction" text="Start" />
+                                <MenuItem mnemonicParsing="false" onAction="#loadMenuAction" text="Load" />
+                                <MenuItem mnemonicParsing="false" onAction="#exitMenuAction" text="Exit" />
+                            </items>
+                        </Menu>
+                        <Menu fx:id="detMenu" mnemonicParsing="false" text="Details">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#enemyShipsMenuAction" text="Enemy Ships" />
+                                <MenuItem mnemonicParsing="false" onAction="#playerShotsMenuAction" text="Player Shots" />
+                                <MenuItem mnemonicParsing="false" onAction="#enemyShotsMenuAction" text="Enemy Shots" />
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+            <Label text="Battleship" textAlignment="CENTER">
+               <font>
+                  <Font name="Stencil" size="45.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Label>
+         </children>
+      </VBox>
+   </top>
+   <bottom>
+      <VBox alignment="CENTER" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+              <HBox fx:id="botSideHBox" alignment="CENTER" maxHeight="60.0" minHeight="60.0" prefHeight="60.0" prefWidth="780.0" spacing="10.0">
+                  <children>
+                      <TextField fx:id="shotInput" promptText="What's your shot?" styleClass="mytextfield">
+                     <font>
+                        <Font name="Stencil" size="17.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </TextField>
+                      <Button fx:id="shootButton" graphicTextGap="0.0" mnemonicParsing="false" onAction="#shootButtonAction" text="Shoot!" textAlignment="CENTER">
+                     <font>
+                        <Font name="Stencil" size="17.0" />
+                     </font>
+                  </Button>
+                  </children>
+              </HBox>
+            <Label fx:id="errorLabel" alignment="CENTER">
+               <font>
+                  <Font name="Stencil" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+   </bottom>
+</BorderPane>

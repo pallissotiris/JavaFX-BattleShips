@@ -1,0 +1,8 @@
+.mypane{
+-fx-background-color: #909090;
+}
+
+.mytextfield{
+-fx-background-color: #cccccc;
+-fx-prompt-text-fill: #606060;
+}

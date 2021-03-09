@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="250.0" prefWidth="370.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ShowWinnerController">
+   <children>
+      <VBox alignment="CENTER" minWidth="370.0" spacing="10.0">
+         <children>
+            <Label fx:id="titleLabel" textAlignment="CENTER">
+               <font>
+                  <Font name="Stencil" size="30.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="textLabel" text="&#10;" textAlignment="CENTER">
+               <font>
+                  <Font name="Stencil" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" right="20.0" />
+               </padding></Label>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <Button fx:id="loadButton" mnemonicParsing="false" onAction="#loadButtonAction" text="Load">
+                     <font>
+                        <Font name="Stencil" size="18.0" />
+                     </font></Button>
+                  <Button fx:id="exitButton" mnemonicParsing="false" onAction="#exitButtonAction" text="Exit">
+                     <font>
+                        <Font name="Stencil" size="18.0" />
+                     </font></Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

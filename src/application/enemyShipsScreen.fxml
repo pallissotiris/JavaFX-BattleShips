@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EnemyShipsScreenController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="400.0" spacing="15.0">
+         <children>
+            <Label text="Enemy Ships Status" textAlignment="CENTER">
+               <font>
+                  <Font name="Stencil" size="22.0" />
+               </font></Label>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="40.0">
+               <children>
+                  <VBox alignment="CENTER">
+                     <children>
+                        <Label fx:id="carrierLabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" minWidth="144.0" text="Carrier:" textAlignment="RIGHT">
+                           <font>
+                              <Font name="Stencil" size="22.0" />
+                           </font></Label>
+                        <Label fx:id="battleshipLabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" minWidth="144.0" text="Battleship:" textAlignment="RIGHT">
+                           <font>
+                              <Font name="Stencil" size="22.0" />
+                           </font></Label>
+                        <Label fx:id="cruiserLabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" minWidth="144.0" text="Cruiser:" textAlignment="RIGHT">
+                           <font>
+                              <Font name="Stencil" size="22.0" />
+                           </font></Label>
+                        <Label fx:id="submarineLabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" minWidth="144.0" text="Submarine:" textAlignment="RIGHT">
+                           <font>
+                              <Font name="Stencil" size="22.0" />
+                           </font></Label>
+                        <Label fx:id="destroyerLabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" minWidth="144.0" text="Destroyer:" textAlignment="RIGHT">
+                           <font>
+                              <Font name="Stencil" size="22.0" />
+                           </font></Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER">
+                     <children>
+                        <Label fx:id="carrierStatusLabel" text="Label">
+                           <font>
+                              <Font name="Stencil" size="22.0" />
+                           </font></Label>
+                        <Label fx:id="battleshipStatusLabel" text="Label">
+                           <font>
+                              <Font name="Stencil" size="22.0" />
+                           </font></Label>
+                        <Label fx:id="cruiserStatusLabel" text="Label">
+                           <font>
+                              <Font name="Stencil" size="22.0" />
+                           </font></Label>
+                        <Label fx:id="submarineStatusLabel" text="Label">
+                           <font>
+                              <Font name="Stencil" size="22.0" />
+                           </font></Label>
+                        <Label fx:id="destroyerStatusLabel" text="Label">
+                           <font>
+                              <Font name="Stencil" size="22.0" />
+                           </font></Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

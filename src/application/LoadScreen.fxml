@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="100.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoadScreenController">
+   <children>
+      <VBox alignment="CENTER" spacing="20.0">
+         <children>
+            <Label fx:id="loadScenarioLabel" text="Which scenario do you want to load?">
+               <font>
+                  <Font name="Stencil" size="18.0" />
+               </font>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding></Label>
+            <HBox alignment="CENTER" spacing="10.0">
+               <children>
+                  <TextField fx:id="loadScenarioTextField">
+                     <font>
+                        <Font name="Stencil" size="18.0" />
+                     </font></TextField>
+                  <Button fx:id="loadScenarioButton" mnemonicParsing="false" onAction="#loadScenarioAction" text="Load">
+                     <font>
+                        <Font name="Stencil" size="18.0" />
+                     </font></Button>
+               </children>
+            </HBox>
+            <Label fx:id="errorLabel">
+               <font>
+                  <Font name="Stencil" size="16.0" />
+               </font></Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
